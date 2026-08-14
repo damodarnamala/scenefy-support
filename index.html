@@ -4,152 +4,274 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scenefy Support</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 42rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
-    color: #1c1c1e; background: #fff;
-  }
-  @media (prefers-color-scheme: dark) { body { color: #f2f2f7; background: #1c1c1e; } }
-  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
-  h2 { font-size: 1.25rem; margin: 2.5rem 0 .5rem; letter-spacing: -.01em; }
-  h3 { font-size: 1.02rem; margin: 1.5rem 0 .35rem; }
-  .lede { color: #636366; margin: 0 0 2rem; }
-  @media (prefers-color-scheme: dark) { .lede { color: #aeaeb2; } }
-  a { color: #0b6bcb; }
-  @media (prefers-color-scheme: dark) { a { color: #6cb2f5; } }
-  .contact { border: 1px solid rgba(128,128,128,.3); border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
-  footer { margin-top: 3rem; font-size: .9rem; color: #636366; border-top: 1px solid rgba(128,128,128,.25); padding-top: 1rem; }
-  @media (prefers-color-scheme: dark) { footer { color: #aeaeb2; } }
-</style>
+<meta name="description" content="Help, answers, and how to reach a human about Scenefy for Mac and iPad.">
+<link rel="icon" href="icon-180.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className+=" js-reveal";</script>
+
 </head>
 <body>
 
-<h1>Scenefy Support</h1>
-<p class="lede">Help, answers, and how to reach a human.</p>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="progress" aria-hidden="true"></div>
 
-<div class="contact">
-  <strong>Email support</strong><br>
-  <a href="mailto:apps.damu@gmail.com">apps.damu@gmail.com</a><br>
-  We reply to every message, usually within two business days. Please include your macOS or
-  iPadOS version and what you were doing when the problem happened.
-</div>
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="marketing.html"><img src="icon-180.png" alt="">Scenefy</a>
+    <div class="links">
+      <a href="marketing.html">Overview</a>
+      <a href="./">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</nav>
 
-<h2>Getting started</h2>
+<header class="hero" style="padding-bottom:2.5rem">
+  <div class="wrap">
+    <img class="appicon" src="icon.png" alt="Scenefy app icon" width="116" height="116">
+    <span class="eyebrow reveal"><span class="dot"></span>Support</span>
+    <h1 class="reveal">How can we <span class="grad">help?</span></h1>
+    <p class="sub reveal">
+      Answers to the questions people actually ask — and a real address that reaches a person.
+    </p>
+  </div>
+</header>
 
-<h3>How do I make my first video?</h3>
-<p>
-  Open Scenefy and pick a format from the home screen — for example Explainer or Quiz. Enter a
-  topic, then tap the button at the bottom of the form. Scenefy writes the script, builds the
-  scenes, and narrates them. When the preview looks right, choose Export to render an MP4.
-</p>
+<section style="border-top:0;padding-top:0">
+  <div class="wrap">
+    <div class="panel reveal">
+      <h3>Email support</h3>
+      <p style="color:var(--fg-2);margin:.3rem 0 .6rem">
+        We reply to every message, usually within two business days. Please include your macOS or
+        iPadOS version and what you were doing when the problem happened — screenshots help a lot.
+      </p>
+      <span class="mail">apps.damu@gmail.com</span>
+      <button class="copy-btn" data-copy="apps.damu@gmail.com" type="button">Copy</button>
+    </div>
+  </div>
+</section>
 
-<h3>Where do my exported files go?</h3>
-<p>
-  Wherever you choose. Scenefy is sandboxed, which means it can only read and write the exact
-  files and folders you select in the save or open panel. When an export produces several files
-  at once — the four-format remix, the bulk queue, or the YouTube kit — Scenefy asks you to pick
-  a destination <em>folder</em> instead of a single file. That is a macOS requirement, not
-  Scenefy browsing your disk.
-</p>
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Frequently asked</h2>
+      <p class="lede">Search, or browse by topic.</p>
+    </div>
 
-<h2>Apple Intelligence</h2>
+    <div class="search reveal">
+      <span aria-hidden="true">🔍</span>
+      <input id="faq-search" type="search" placeholder="Search help — try “export”, “microphone”, “refund”" aria-label="Search help">
+      <span class="hint">Press /</span>
+    </div>
 
-<h3>Scenefy says generation is unavailable. What now?</h3>
-<p>All AI generation runs on your device. It needs three things to be true:</p>
-<ul>
-  <li>A device that supports Apple Intelligence.</li>
-  <li>Apple Intelligence turned on in System Settings (Mac) or Settings (iPad).</li>
-  <li>The on-device models finished downloading. This happens in the background after you enable
-      Apple Intelligence and can take a while on a slow connection.</li>
-</ul>
-<p>
-  Scenefy shows the current status in <strong>Settings → Apple Intelligence</strong>. Everything
-  that is not generation — editing, branding, preview, and export — keeps working even when
-  generation is unavailable.
-</p>
+    <p class="noresults">Nothing matched that. Try a different word, or email us — we read everything.</p>
 
-<h3>Is my content sent anywhere?</h3>
-<p>
-  No. Your topics, scripts, and projects are processed on your device and are never uploaded to
-  us or to any third party. Scenefy has no accounts and no sign-in. The only time the app uses
-  the network is when you paste a link into URL Import, and when it talks to the App Store about
-  a purchase.
-</p>
+    <div data-faq-group class="reveal">
+      <h3 style="margin:2rem 0 .8rem;color:var(--fg-3);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">Getting started</h3>
+      <div class="faq">
+        <details class="qa">
+          <summary>How do I make my first video?</summary>
+          <div class="body">
+            <p>
+              Open Scenefy and pick a format from the home screen — Explainer or Quiz are good
+              first choices. Enter a topic, then tap the button at the bottom of the form. Scenefy
+              writes the script, builds the scenes, and narrates them. When the preview looks
+              right, choose Export to render an MP4.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Where do my exported files go?</summary>
+          <div class="body">
+            <p>
+              Wherever you choose. Scenefy is sandboxed, which means it can only read and write the
+              exact files and folders you select in the save or open panel.
+            </p>
+            <p>
+              When an export produces several files at once — the four-format remix, the bulk
+              queue, or the YouTube kit — Scenefy asks you to pick a destination <strong>folder</strong>
+              instead of a single file. That is a macOS requirement, not Scenefy browsing your disk.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Can I use my own questions in a quiz?</summary>
+          <div class="body">
+            <p>
+              Yes. Import a CSV question bank and Scenefy builds the quiz scenes around it, with
+              your own timing and reveal settings.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
 
-<h2>Subscriptions and purchases</h2>
+    <div data-faq-group class="reveal">
+      <h3 style="margin:2rem 0 .8rem;color:var(--fg-3);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">Apple Intelligence</h3>
+      <div class="faq">
+        <details class="qa">
+          <summary>Scenefy says generation is unavailable. What now?</summary>
+          <div class="body">
+            <p>All AI generation runs on your device. It needs three things to be true:</p>
+            <ul>
+              <li>A device that supports Apple Intelligence.</li>
+              <li>Apple Intelligence turned on in System Settings (Mac) or Settings (iPad).</li>
+              <li>The on-device models finished downloading — this happens in the background after
+                  you enable Apple Intelligence and can take a while on a slow connection.</li>
+            </ul>
+            <p>
+              Scenefy shows the current status in <strong>Settings → Apple Intelligence</strong>.
+              Everything that is not generation — editing, branding, preview, and export — keeps
+              working even when generation is unavailable.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Is my content sent anywhere?</summary>
+          <div class="body">
+            <p>
+              No. Your topics, scripts, and projects are processed on your device and are never
+              uploaded to us or to any third party. Scenefy has no accounts and no sign-in. The
+              only time the app uses the network is when you paste a link into URL Import, and when
+              it talks to the App Store about a purchase.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>My generated content is not quite right.</summary>
+          <div class="body">
+            <p>
+              AI output is a starting point, not a finished script. Every scene is editable, and
+              regenerating with a more specific topic and audience usually helps. Always review
+              generated text before you publish it.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
 
-<h3>What do I get for free?</h3>
-<p>
-  Scenefy starts with 15 days of unrestricted access — unlimited AI generation, no waiting, and
-  clean exports at full resolution. After that the free plan continues to work: a limited number
-  of AI generations, then a short wait between them, and unlimited exports at 720p with a Scenefy
-  watermark.
-</p>
+    <div data-faq-group class="reveal">
+      <h3 style="margin:2rem 0 .8rem;color:var(--fg-3);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">Subscriptions &amp; purchases</h3>
+      <div class="faq">
+        <details class="qa">
+          <summary>What do I get for free?</summary>
+          <div class="body">
+            <p>
+              Scenefy starts with 15 days of unrestricted access — unlimited AI generation, no
+              waiting, and clean exports at full resolution. After that the free plan continues to
+              work: a set number of AI generations, then a short wait between them, and unlimited
+              exports at 720p with a Scenefy watermark.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>What does Scenefy Pro add?</summary>
+          <div class="body">
+            <p>Unlimited AI creation, exports up to 4K, no watermark, and no waiting between generations.</p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>I paid already — how do I get it back on a new Mac?</summary>
+          <div class="body">
+            <p>
+              Open <strong>Settings → Subscription → Restore Purchases</strong> while signed in
+              with the same Apple Account you bought with. Your plan and its expiry date are shown
+              in the same section.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>How do I cancel?</summary>
+          <div class="body">
+            <p>
+              Subscriptions are managed by Apple, not by us. On a Mac open the App Store, click
+              your name, then Account Settings → Manage next to Subscriptions. On iPad open
+              Settings, tap your name, then Subscriptions. Cancelling stops the next renewal; Pro
+              keeps working until the date shown in Scenefy.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Can I get a refund?</summary>
+          <div class="body">
+            <p>
+              Refunds are handled by Apple. Visit
+              <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, and
+              choose the purchase. We cannot issue refunds ourselves, but email us if something
+              went wrong and we will help you sort it out.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
 
-<h3>What does Scenefy Pro add?</h3>
-<p>Unlimited AI creation, exports up to 4K, and no watermark.</p>
+    <div data-faq-group class="reveal">
+      <h3 style="margin:2rem 0 .8rem;color:var(--fg-3);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase">Troubleshooting</h3>
+      <div class="faq">
+        <details class="qa">
+          <summary>The microphone does not record.</summary>
+          <div class="body">
+            <p>
+              Scenefy needs microphone permission before it can record narration. On a Mac check
+              System Settings → Privacy &amp; Security → Microphone; on iPad check Settings →
+              Scenefy. If you also want spoken words turned into on-screen text, Speech Recognition
+              must be allowed as well.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Export is slower than I expected.</summary>
+          <div class="body">
+            <p>
+              Some scenes have to be drawn exactly rather than through the fast path — a logo
+              watermark is the usual reason. Longer projects and 4K output also take proportionally
+              more time. Rendering continues while you work in another app.
+            </p>
+          </div>
+        </details>
+        <details class="qa">
+          <summary>Can I get an MP3?</summary>
+          <div class="body">
+            <p>
+              Audio exports are M4A (AAC). Apple platforms ship no MP3 encoder, so we would rather
+              label the format honestly than hand you a file with the wrong extension. M4A plays
+              everywhere MP3 does.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h3>I paid already — how do I get it back on a new Mac?</h3>
-<p>
-  Open <strong>Settings → Subscription → Restore Purchases</strong> while signed in with the same
-  Apple Account you bought with. Your plan and its expiry date are shown in the same section.
-</p>
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Still stuck?</h2>
+      <p class="lede">
+        Email <a href="mailto:apps.damu@gmail.com">apps.damu@gmail.com</a> with your device, your
+        operating system version, and a short description of what happened. We read every message.
+      </p>
+    </div>
+  </div>
+</section>
 
-<h3>How do I cancel?</h3>
-<p>
-  Subscriptions are managed by Apple, not by us. On a Mac open the App Store, click your name,
-  then Account Settings → Manage next to Subscriptions. On iPad open Settings, tap your name, then
-  Subscriptions. Cancelling stops the next renewal; Pro keeps working until the date shown in
-  Scenefy.
-</p>
-
-<h3>Can I get a refund?</h3>
-<p>
-  Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>,
-  sign in, and choose the purchase. We are not able to issue refunds ourselves, but email us if
-  something went wrong and we will help you sort it out.
-</p>
-
-<h2>Common problems</h2>
-
-<h3>The microphone does not record.</h3>
-<p>
-  Scenefy needs microphone permission before it can record narration. On a Mac check System
-  Settings → Privacy &amp; Security → Microphone; on iPad check Settings → Scenefy. If you also
-  want spoken words turned into on-screen text, Speech Recognition must be allowed as well.
-</p>
-
-<h3>Export is slower than I expected.</h3>
-<p>
-  Some scenes have to be drawn exactly rather than through the fast path — a logo watermark is
-  the usual reason. Longer projects and 4K output also take proportionally more time. Rendering
-  continues while you work in another app.
-</p>
-
-<h3>My generated content is not quite right.</h3>
-<p>
-  AI output is a starting point, not a finished script. Every scene is editable, and regenerating
-  with a more specific topic and audience usually helps. Always review generated text before you
-  publish it.
-</p>
-
-<h2>Privacy</h2>
-<p>
-  Scenefy collects nothing. There are no accounts, no analytics, and no advertising identifiers.
-  The full policy is in the app under <strong>Settings → Privacy &amp; Legal → Privacy Policy</strong>.
-</p>
-
-<h2>Still stuck?</h2>
-<p>
-  Email <a href="mailto:apps.damu@gmail.com">apps.damu@gmail.com</a> with your device, your
-  operating system version, and a short description of what happened. Screenshots help a lot.
-</p>
-
-<footer>
-  Scenefy · Support · Last updated August 2026
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <span class="fbrand"><img src="icon-180.png" alt="">Scenefy</span>
+      <div class="flinks">
+        <a href="marketing.html">Overview</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:apps.damu@gmail.com">Contact</a>
+      </div>
+    </div>
+    <p class="fine">Scenefy · Support · Last updated August 2026</p>
+  </div>
 </footer>
 
+<button class="totop" type="button" aria-label="Back to top">↑</button>
+<script src="app.js"></script>
 </body>
 </html>
