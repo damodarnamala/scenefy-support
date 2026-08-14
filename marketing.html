@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scenefy — Turn an idea into a finished video, on your Mac</title>
+<meta name="description" content="Scenefy turns a topic into a scripted, narrated, rendered video — plus quizzes, PDFs, and reading packs. Every generation runs on device with Apple Intelligence.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #636366;
+    --line: rgba(120,120,128,.24);
+    --card: #f7f7f9;
+    --accent: #0b6bcb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101013; --fg: #f2f2f7; --muted: #a1a1aa; --line: rgba(120,120,128,.32); --card: #1a1a1f; --accent: #6cb2f5; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
+  a { color: var(--accent); }
+
+  header.hero { padding: 5rem 0 3.5rem; text-align: center; }
+  .mark {
+    width: 68px; height: 68px; margin: 0 auto 1.5rem; border-radius: 16px;
+    background: linear-gradient(145deg, #5b6cff, #b45bff 55%, #ff5b9e);
+    display: grid; place-items: center; color: #fff; font-size: 30px; font-weight: 700;
+  }
+  h1 { font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.1; letter-spacing: -.03em; margin: 0 0 1rem; }
+  .sub { font-size: clamp(1.05rem, 2.2vw, 1.3rem); color: var(--muted); max-width: 38rem; margin: 0 auto 2rem; }
+  .badges { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; font-size: .9rem; color: var(--muted); }
+  .badge { border: 1px solid var(--line); border-radius: 999px; padding: .35rem .85rem; }
+
+  section { padding: 3.25rem 0; border-top: 1px solid var(--line); }
+  h2 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.02em; margin: 0 0 .6rem; }
+  .lede { color: var(--muted); max-width: 42rem; margin: 0 0 2rem; }
+
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.25rem; }
+  .card h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .96rem; }
+
+  ul.checks { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); }
+  ul.checks li { padding-left: 1.6rem; position: relative; color: var(--muted); }
+  ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
+  .plans { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+  .plan { border: 1px solid var(--line); border-radius: 14px; padding: 1.4rem; }
+  .plan.pro { border-color: var(--accent); }
+  .plan h3 { margin: 0 0 .2rem; font-size: 1.15rem; }
+  .plan .tag { font-size: .82rem; color: var(--muted); display: block; margin-bottom: .9rem; }
+  .plan ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: .96rem; }
+
+  footer { border-top: 1px solid var(--line); padding: 2rem 0 3rem; color: var(--muted); font-size: .92rem; }
+  footer a { margin-right: 1rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="mark">S</div>
+    <h1>Turn an idea into a finished video.</h1>
+    <p class="sub">
+      Type a topic. Scenefy writes the script, builds the scenes, narrates them, and renders an
+      MP4 you can post — without a timeline full of clips to hunt down.
+    </p>
+    <div class="badges">
+      <span class="badge">Mac &amp; iPad</span>
+      <span class="badge">Runs on device</span>
+      <span class="badge">No account required</span>
+      <span class="badge">15-day free trial</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Your Mac is the studio</h2>
+    <p class="lede">
+      Every generation runs locally through Apple Intelligence. Your topics, scripts, and projects
+      never leave the device — there is no server to sign in to and no usage data to hand over.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Nothing is uploaded</h3>
+        <p>Script generation, narration, quiz writing, and scene suggestions all happen on your own hardware.</p>
+      </div>
+      <div class="card">
+        <h3>No accounts, no keys</h3>
+        <p>No sign-in, no API key, no subscription to a third-party AI service just to open the app.</p>
+      </div>
+      <div class="card">
+        <h3>Works offline</h3>
+        <p>Generation and every export work with the network off. Only URL Import needs a connection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>More than videos</h2>
+    <p class="lede">
+      One project becomes whatever your audience needs — a reel, a printable handout, a graded
+      quiz, or a set of study chapters.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>35+ ready formats</h3>
+        <p>Explainers, quizzes, exams, announcements, fact reels, breaking-news cards, interview prep, FAQs, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Reading Mode</h3>
+        <p>AI-written chapters with full Markdown and LaTeX math, notes, bookmarks, and highlights — then a test generated from any chapter.</p>
+      </div>
+      <div class="card">
+        <h3>Quizzes that behave</h3>
+        <p>Real countdown timing, reveal scenes, difficulty tiers, scoring, and CSV import for your own question bank.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Export everything</h2>
+    <ul class="checks">
+      <li>MP4 at up to 4K, in widescreen, vertical, square, or portrait</li>
+      <li>Remix one project into four social formats in a single pass</li>
+      <li>PDF companion handouts and standalone HTML quizzes</li>
+      <li>Audio-only exports, thumbnails, captions, and a YouTube kit</li>
+      <li>Bulk queue that renders a batch while you keep working</li>
+      <li>Brand Kit that applies your colors, logo, and calls to action everywhere</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Make it sound like you</h2>
+    <p class="lede">
+      Narrate with Apple Speech voices in multiple languages, or record your own take and trim it
+      in the app. A built-in teleprompter handles the long scripts.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="lede">Scenefy opens with 15 days of unrestricted access. After that it keeps working.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <span class="tag">After the trial ends</span>
+        <ul>
+          <li>A set number of AI generations, then a short wait between them</li>
+          <li>Unlimited exports at 720p</li>
+          <li>Scenefy watermark on exported video</li>
+          <li>Every editing, branding, and export feature stays available</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>Scenefy Pro</h3>
+        <span class="tag">Subscription, sold through the App Store</span>
+        <ul>
+          <li>Unlimited AI creation</li>
+          <li>Export up to 4K</li>
+          <li>No watermark</li>
+          <li>No waiting between generations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Requirements</h2>
+    <p class="lede">
+      macOS 26 or later, or iPadOS 26 or later. AI generation additionally requires a device that
+      supports Apple Intelligence, with Apple Intelligence enabled and its on-device models ready.
+      Editing, branding, preview, and export work regardless.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="./">Support</a>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="mailto:apps.damu@gmail.com">Contact</a>
+    <p>Scenefy — on-device video creation for Mac and iPad.</p>
+  </div>
+</footer>
+
+</body>
+</html>
