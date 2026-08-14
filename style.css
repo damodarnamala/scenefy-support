@@ -352,3 +352,8 @@ html.js-reveal .reveal.in { opacity: 1; transform: none; }
   body { background: #fff; color: #000; }
   .legal { grid-template-columns: 1fr; }
 }
+
+/* Four numbered steps should read as one row on a desktop width — the default 16rem minimum
+   wraps them 3+1, which reads as a dropped item rather than a sequence. */
+.grid.steps { grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); }
+.grid.steps .ico { font-weight: 700; font-size: 17px; }
